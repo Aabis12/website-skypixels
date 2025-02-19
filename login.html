@@ -1,0 +1,185 @@
+<!--Doctype and website header-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Sky Pixels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    
+    <link rel="stylesheet" href="loginstyle.css">
+
+         <!--Start of Tawk.to Script-->
+
+
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/678b9f043a84273260710673/1ihsmab0m';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+
+
+    <!--End of Tawk.to Script-->
+
+</head>
+
+<body>
+    <!--HeaderLogo-->
+    
+    <section id="header">
+        <a href="#"><img src="logo.png" class="logo" alt=""></a>
+        <!--Navbar-->
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="login.html">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Support.html">Support</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="user-account">
+                    <a href="account.html" aria-label="User Account">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                 <li class="search-bar">
+            <form action="/search" method="get">
+                <input type="search" name="q" class="search-input" placeholder="Search Components" aria-label="Search Components">
+                <button type="submit" aria-label="Submit Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+      
+    </section>  </li>
+                
+            </ul>
+        </div>
+        
+    </section>
+    <!-- Login Section -->
+    <section id="login">
+        <div class="login-container">
+            <h2>Login to Sky Pixels</h2>
+            <form action="/login" method="post">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+        <img class="logo" src="img/Sky (280 x 100 px) (200 x 156 px) (280 x 100 px).png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Amity University Greater Noida</p>
+        <p><strong>Phone:</strong>7303799080</p>
+        <p><strong>Hours:</strong> 24*7 Mon - Sun</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Acount</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My WishList</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play Store</p>
+            <div class="row">
+                <img src="img/app.jpg" alt="">
+                <img src="img/play.jpg" alt="">
+
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay.png" alt="">
+
+        </div>
+        <div class="copyright">
+            <p>© Skypixels.in is registered trademark of SKYPIXELS LIMITED - All Right Reseved </p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.querySelector("form");
+
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+        
+        if (!validateEmail(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+        
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            return;
+        }
+        
+        // Simulate login process (Replace with actual API call)
+        fetch("/api/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ email, password })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert("Login successful!");
+                window.location.href = "dashboard.html"; // Redirect to dashboard
+            } else {
+                alert("Invalid email or password.");
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("Something went wrong. Please try again.");
+        });
+    });
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+});
+
+    </script>
+
+</body>
+
+</html>

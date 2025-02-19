@@ -1,0 +1,18 @@
+.create-account {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: gray;
+}
+
+.create-account a {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 600;
+    margin-left: 0.3em;
+    transition: color 0.3s;
+}
+
+.create-account a:hover {
+    color: green;
+}

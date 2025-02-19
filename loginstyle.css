@@ -1,0 +1,343 @@
+@import url(https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+    font-size: 12px;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: darkgray;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header styles */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* Navbar Base Styles */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    margin: 0 10px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Smooth font size and scale */
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: purple;
+    transform: scale(1.2); /* Enlarge text slightly on hover */
+}
+
+/* Active Link Underline */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: purple;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Button Styling */
+#navbar button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 8px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#navbar button:hover {
+    transform: scale(1.2);
+    background-color: lightgray;
+}
+
+/* Search Bar Styling */
+#navbar .search-bar {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+#navbar .input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Add smooth hover for links */
+#navbar li a {
+    transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+/* Adjust font size on scroll (to be controlled via JavaScript) */
+#navbar.scrolled li a {
+    font-size: 18px; /* Larger font size when scrolled */
+}
+
+
+/* Ensure navbar items are aligned properly */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adjust spacing */
+}
+
+
+/* Login Section */
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust based on header height */
+    background-image: url("img/SkyPixels\ \(5\).png");
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 2px solid purple;
+}
+
+.btn {
+    background-color: purple;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: purple;
+    transform: scale(1.2);
+    background-color: purple;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth scaling */
+    
+}
+
+.signup-link {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: purple;
+    text-decoration: none;
+    transform: scale(1.2);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth scaling */
+
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    
+}
+
+footer .follow{
+    margin-top: 20px;
+
+}
+
+footer .follow i{
+    color: grey;
+    padding-right: 4px;
+    cursor: pointer;
+
+}
+
+footer .install .row img{
+    border: 1px solid purple;
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+
+
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: purple;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+

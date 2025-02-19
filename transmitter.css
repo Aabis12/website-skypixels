@@ -1,0 +1,289 @@
+/* Responsive Design for Video Section */
+@media (max-width: 1200px) {
+    #Video {
+        height: 60vh; /* Adjust the video container height for medium screens */
+    }
+
+    .full-screen-video {
+        width: 100%; /* Ensure the video scales to fit the container */
+        height: 100%; /* Make sure the video takes up full height */
+    }
+}
+
+@media (max-width: 768px) {
+    #Video {
+        height: 50vh; /* Reduce height for smaller screens */
+    }
+
+    .full-screen-video {
+        width: 100%; /* Scale video width to fit */
+        height: 100%; /* Ensure the video maintains full height */
+    }
+}
+
+@media (max-width: 480px) {
+    #Video {
+        height: 40vh; /* Further reduce video container height for very small screens */
+    }
+
+    .full-screen-video {
+        width: 100%; /* Ensure the video width fits on smaller screens */
+        height: 100%; /* Ensure the video height adjusts accordingly */
+    }
+}
+
+#Video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Default height for larger screens */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars if content exceeds screen */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure the video doesn't go outside the container */
+}
+
+.full-screen-video {
+    width: 100%; /* Ensure the video width takes up the full container */
+    height: 100%; /* Ensure the video height takes up the full container */
+    object-fit: cover; /* Ensures the video covers the screen without stretching */
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+}
+
+/*Product1*/
+
+#product1{
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid wheat;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px;
+}
+
+#product1 .pro .des span{
+    color: orange;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding: 1px;
+    color: black;
+    font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: brown;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(7, 135, 247);
+    font-weight: 500;
+    color: aqua;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+/*Product2*/
+
+#product2{
+    text-align: center;
+}
+
+#product2 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#product2 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid wheat;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+#product2 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product2 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product2 .pro .des{
+    text-align: start;
+    padding: 10px;
+}
+
+#product2 .pro .des span{
+    color: orange;
+    font-size: 12px;
+}
+
+#product2 .pro .des h5{
+    padding: 1px;
+    color: black;
+    font-size: 14px;
+}
+
+#product2 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product2 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: brown;
+}
+
+#product2 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(7, 135, 247);
+    font-weight: 500;
+    color: aqua;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+/*Product3*/
+
+#product3{
+    text-align: center;
+}
+
+#product3 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#product3 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid wheat;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+#product13 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product3 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product3 .pro .des{
+    text-align: start;
+    padding: 10px;
+}
+
+#product3 .pro .des span{
+    color: orange;
+    font-size: 12px;
+}
+
+#product3 .pro .des h5{
+    padding: 1px;
+    color: black;
+    font-size: 14px;
+}
+
+#product3 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product3 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: brown;
+}
+
+#product3 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(7, 135, 247);
+    font-weight: 500;
+    color: aqua;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+
+

@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("img/SkyPixels (5).png"); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.container {
+    width: 25em;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.15); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Adds a subtle glassmorphic effect */
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 1em;
+    color: purple; /* A calming green color for the header */
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+form label {
+    text-align: left;
+    font-weight: 600;
+    color: #fff;
+}
+
+form input {
+    padding: 0.8em;
+    font-size: 0.95em;
+    border: 1px solid lightgray;
+    border-radius: 0.3em;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+    background: rgba(255, 255, 255, 0.8); /* Light input background for visibility */
+    color: #333;
+}
+
+form input:focus {
+    border-color: purple;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+form button {
+    background-color: purple;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.6em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: purple;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.back-to-login {
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.back-to-login a {
+    text-decoration: none;
+    color: purple;
+    font-weight: 600;
+    margin-left: 0.3em;
+    transition: color 0.3s;
+}
+
+.back-to-login a:hover {
+    color: purple;
+}
+
+
+

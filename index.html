@@ -1,0 +1,734 @@
+<!--Doctype and website header-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Sky Pixels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    
+    <link rel="stylesheet" href="style.css">
+
+         <!--Start of Tawk.to Script-->
+
+
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/678b9f043a84273260710673/1ihsmab0m';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+
+
+    <!--End of Tawk.to Script-->
+
+</head>
+
+<body>
+    <!--HeaderLogo-->
+    
+    <section id="header">
+        <a href="#"><img src="logo.png" class="logo" alt=""></a>
+        <!--Navbar-->
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Support.html">Support</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="user-account">
+                    <a href="account.html" aria-label="User Account">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                 <li class="search-bar">
+            <form action="/search" method="get">
+                <input type="search" name="q" class="search-input" placeholder="Search Components" aria-label="Search Components">
+                <button type="submit" aria-label="Submit Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+      
+    </section>  </li>
+                
+            </ul>
+        </div>
+        
+    </section>
+    <!--Slider image-->
+
+    <section id="sliders">
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide"><img src="slider img/winter.jpg" alt="Image 1">
+                    <button class="full-size-btn" onclick="openFullSize('slider img/winter.jpg')">Full Image Size</button>
+                </div>
+                <div class="slide"><img src="slider img/delivery.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="slider img/sky.jpg" alt="Image 3"></div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            <div class="indicators" id="indicators"></div>
+        </div>
+    
+        <script>
+      const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+const indicators = document.querySelectorAll('.indicator');
+
+let index = 0; // Initialize index
+let interval = setInterval(nextSlide, 3000); // Auto-slide interval
+
+function nextSlide() {
+    index = (index + 1) % slides.length;
+    updateSlider();
+}
+
+function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    updateSlider();
+}
+
+function updateSlider() {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    updateIndicators();
+}
+
+function updateIndicators() {
+    indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === index);
+    });
+}
+
+function openFullSize(imageSrc) {
+    window.open(imageSrc, '_blank');
+}
+
+// Pause auto-slide on hover
+slider.addEventListener('mouseenter', () => {
+    clearInterval(interval);
+});
+
+slider.addEventListener('mouseleave', () => {
+    interval = setInterval(nextSlide, 3000);
+});
+
+// Add event listeners for navigation buttons
+prevButton.addEventListener('click', () => {
+    prevSlide();
+    resetInterval();
+});
+
+nextButton.addEventListener('click', () => {
+    nextSlide();
+    resetInterval();
+});
+
+// Add event listeners for indicators
+indicators.forEach((indicator, i) => {
+    indicator.addEventListener('click', () => {
+        index = i;
+        updateSlider();
+        resetInterval();
+    });
+});
+
+function resetInterval() {
+    clearInterval(interval);
+    interval = setInterval(nextSlide, 3000);
+}
+
+// Initialize slider and indicators
+updateSlider();
+updateIndicators();
+
+
+        </script>
+    </section>
+    
+    <!--Frontphoto-->
+    <section id="hero">
+        <a class="ShopNow" href="shop.html">Shop Now</a>
+   </section>
+        
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Pre Built FPV Drones</h2>
+        <p></p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="product img/SB_Master5V2-1__84418.jpg" alt="">
+                <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee Master 5 V2 HD DJI O3 Air Unit FPV 5 Freestyle drone</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/sb_f405-aio-12__23895.jpg" alt="">
+                <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee F405 V4 BLS 60A 30x30 FC&ESC Stack</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹7500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/SB_F405V4-60A-0__73023.jpg" alt="">
+                <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee F405 V4 BLS 60A 30x30 FC&ESC Stack</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹6400</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/SB_F405V4-60A-0__73023.jpg" alt="">
+                <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee F405 V4 BLS 60A 30x30 FC&ESC Stack</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹6400</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            </section>
+    <!--christmasimg-->
+
+    
+    <section id="Video">
+        <div class="video-container">
+            <video autoplay loop muted class="full-screen-video">
+                <source src="img/video/1734798618272625.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <!--Product-->
+
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Stacks</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/f7v3-2__03068.png" alt="">
+                <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee F405 V4 BLS 60A 30x30 FC&ESC Stack</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/sb_f405-aio-12__23895.jpg" alt="">
+                <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee F405 V4 BLS 60A 30x30 FC&ESC Stack</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹7500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/SB_F405V4-60A-0__73023.jpg" alt="">
+                <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee F405 V4 BLS 60A 30x30 FC&ESC Stack</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹6400</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/SB_60AESC-1__98097.jpg" alt="">
+                <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee BLS 60A 30x30 4-in-1 ESC</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <section id="product1" class="section-p1">
+    
+                <h2>Featured Products</h2>
+                <div class="pro-container">
+                    <div class="pro">
+                    <img src="img/SB_Master5V2-1__84418.png" alt="">
+                    <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee Master 5 V2 HD DJI O3 Air Unit FPV 5 Freestyle drone</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹52000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/SB_WING-MINI-1__04828.png" alt="">
+                <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee F405 WING MINI Fixed Wing Flight Controller</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹4000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/SB_bee35-4__58479.png" alt="">
+                <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee Bee35 3.5 inch Drone HD O3 Air Unit FPV</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹48000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="img/tx800-1__98008.png" alt="">
+                <div class="des">
+                    <span>SpeedyBee</span>
+                    <h5>SpeedyBee TX800</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="banner" class="section-m1 ">
+        <h4>Repair Services </h4>
+        <h2>Up to <span>30% off </span> - All Drones & Accessories</h2>
+        <button class="normal">Explore More</button>
+    </section>
+    <section id="product2" class="section-p2">
+        <h2>Drone Transmitter and Reciver</h2>
+        <p>Popular</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="trx img/IMG_9573.PNG" alt="">
+                <div class="des">
+                    <span>Frsky</span>
+                    <h5>FrSky 2.4GHz Taranis Q X7 Access Transmitter?</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/71I5C7vNXjL._SL1200_.jpg" alt="">
+                <div class="des">
+                    <span>Flysky</span>
+                    <h5>Flysky FS-i6 6CH 2.4GHz AFHDS RC Transmitter w/FS-iA6B Receiver for RC Multirotor Helicopter Airplane Glider Quadcopter (Model_2)</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="img/71vPSchUcsL._SL1500_.jpg" alt="">
+                <div class="des">
+                    <span>Flysky</span>
+                    <h5>Sound Land Corp Flysky Fs-Ct6B 6-Channel Metal Transmitter + Receiver (Black), Kid</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="img/611RjPJ6jAL._SL1116_.jpg" alt="">
+                <div class="des">
+                    <span>Flysky</span>
+                    <h5>sky FS-i6X 10CH 2.4GHz AFHDS RC Transmitter with FS-iA6B Receiver</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="trx img/IMG_9548.PNG" alt="">
+                <div class="des">
+                    <span>Jumper</span>
+                    <h5>Jumper T15 ELRS 2.4GHz Radio Transmitter w/ 3.5″ Touchscreen + Hall Gimbals</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="trx img/IMG_9544.JPG" alt="">
+                <div class="des">
+                    <span>Radiolink</span>
+                    <h5>Radiolink AT9S Pro Remote 2.4GHz 12CH RC Drone Remote with R9DS Receiver, AT9S Pro Flight Controller - RS6048</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="trx img/IMG_9549.PNG" alt="">
+                <div class="des">
+                    <span>Radio Master</span>
+                    <h5>Radiomaster Boxer 2.4GHz Radio Controller (M2)- 4IN1 Version</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="trx img/IMG_9554.PNG" alt="">
+                <div class="des">
+                    <span>Radiomaster</span>
+                    <h5>Radiomaster Pocket Radio Controller –CC2500 -Charcoal</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="trx img/IMG_9570.PNG" alt="">
+                <div class="des">
+                    <span>Radiomaster</span>
+                    <h5>Radiomaster TX12 MKII 2.4GHz Radio Controller – CC2500 Version</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="trx img/IMG_9565.JPG" alt="">
+                <div class="des">
+                    <span>Radiomaster</span>
+                    <h5>Radiomaster TX16S MKII HALL V4.0 ELRS Radio with RP1 ExpressLRS 2.4ghz Nano Receiver</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="trx img/IMG_9561.PNG" alt="">
+                <div class="des">
+                    <span>TBS</span>
+                    <h5>TBS Tango 2 – FPV RC Radio Drone Controller</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="img/611RjPJ6jAL._SL1116_.jpg" alt="">
+                <div class="des">
+                    <span>Flysky</span>
+                    <h5>sky FS-i6X 10CH 2.4GHz AFHDS RC Transmitter with FS-iA6B Receiver</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="img/611RjPJ6jAL._SL1116_.jpg" alt="">
+                <div class="des">
+                    <span>Flysky</span>
+                    <h5>sky FS-i6X 10CH 2.4GHz AFHDS RC Transmitter with FS-iA6B Receiver</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="img/611RjPJ6jAL._SL1116_.jpg" alt="">
+                <div class="des">
+                    <span>Flysky</span>
+                    <h5>sky FS-i6X 10CH 2.4GHz AFHDS RC Transmitter with FS-iA6B Receiver</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="img/611RjPJ6jAL._SL1116_.jpg" alt="">
+                <div class="des">
+                    <span>Flysky</span>
+                    <h5>sky FS-i6X 10CH 2.4GHz AFHDS RC Transmitter with FS-iA6B Receiver</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div><div class="pro">
+                <img src="img/611RjPJ6jAL._SL1116_.jpg" alt="">
+                <div class="des">
+                    <span>Flysky</span>
+                    <h5>sky FS-i6X 10CH 2.4GHz AFHDS RC Transmitter with FS-iA6B Receiver</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹9000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <!--Delivery Video-->
+            <section id="Video2">
+                <div class="video-container">
+                    <video autoplay loop muted class="full-screen-video2">
+                        <source src="White and Grey Delivery Services Business Presentation (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+            <!--Bannerbox-->
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h2>Consumer</h2>
+            <span>Get Closer to the action
+                while pushing the limits of adventure and fun with our Drones.
+            </span>
+            <button class="white">Learn More></button>
+        </div>
+    </section>
+    <section id="sm-banner2" class="section-p1">
+        <div class="banner-box">
+            <h2>Agriculture</h2>
+            <span>Precision farming made easy with efficient drone technology.</span>
+            <button class="white">Learn More></button>
+        </div>
+    </section>
+    <section id="sm-banner3" class="section-p1">
+        <div class="banner-box">
+            <h2>Defence</h2>
+            <span>Eyes in the sky,security on the ground unmanned aerial protection for a safe world.</span>
+            <button class="white">Learn More></button>
+        </div>
+    </section>
+    <!--newsletter-->
+    <section id="newsletter" class="section-p1" section-m1>
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span>
+            </p>
+        </div> 
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="section-p1">
+        <div class="col">
+        <img class="logo" src="img/Sky (280 x 100 px) (200 x 156 px) (280 x 100 px).png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Amity University Greater Noida</p>
+        <p><strong>Phone:</strong>7303799080</p>
+        <p><strong>Hours:</strong> 24*7 Mon - Sun</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Acount</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My WishList</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play Store</p>
+            <div class="row">
+                <img src="img/app.jpg" alt="">
+                <img src="img/play.jpg" alt="">
+
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay.png" alt="">
+
+        </div>
+        <div class="copyright">
+            <p>©️ Skypixels.in is registered trademark of SKYPIXELS LIMITED - All Right Reseved </p>
+        </div>
+    </footer>
+    <!--scriptdetail-->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="signupstyle.css">
+
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/678b9f043a84273260710673/1ihsmab0m';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</head>
+<body>
+    <div class="container">
+        <h1>Create an Account</h1>
+        <form>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter your full name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Choose a username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a password">
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password">
+
+            <button type="button" id="create-account">Create Account</button>
+
+            <div class="back-to-login">
+                <span>Already have an account?</span>
+                <a href="login.html">Login here</a>
+            </div>
+        </form>
+    </div>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const signupForm = document.querySelector("form");
+    const createAccountButton = document.getElementById("create-account");
+    
+    createAccountButton.addEventListener("click", function () {
+        const fullName = document.getElementById("fullname").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const confirmPassword = document.getElementById("confirm-password").value.trim();
+        
+        if (fullName === "" || email === "" || username === "" || password === "" || confirmPassword === "") {
+            alert("All fields are required.");
+            return;
+        }
+        
+        if (!validateEmail(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+        
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            return;
+        }
+        
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return;
+        }
+        
+        // Simulate account creation (Replace with actual API call)
+        fetch("/api/signup", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ fullName, email, username, password })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert("Account created successfully! Redirecting to login page.");
+                window.location.href = "login.html";
+            } else {
+                alert("Error: " + data.message);
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("Something went wrong. Please try again.");
+        });
+    });
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+});
+
+    </script>
+</body>
+</html>

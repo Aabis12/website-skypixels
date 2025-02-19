@@ -1,0 +1,1125 @@
+@import url(https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+    font-size: 12px;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: darkgray;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header styles */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* Navbar Base Styles */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    margin: 0 10px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Smooth font size and scale */
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: purple;
+    transform: scale(1.2); /* Enlarge text slightly on hover */
+}
+
+/* Active Link Underline */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: purple;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Button Styling */
+#navbar button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 8px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#navbar button:hover {
+    transform: scale(1.2);
+    background-color: lightgray;
+}
+
+/* Search Bar Styling */
+#navbar .search-bar {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+#navbar .input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Add smooth hover for links */
+#navbar li a {
+    transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+/* Adjust font size on scroll (to be controlled via JavaScript) */
+#navbar.scrolled li a {
+    font-size: 18px; /* Larger font size when scrolled */
+}
+
+
+/* Ensure navbar items are aligned properly */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adjust spacing */
+}
+
+
+/*stack*/
+#sm-banner .banner-box {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/stack.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+
+#sm-banner .banner-box h2 {
+    color: black;
+}
+#sm-banner .banner-box:hover {
+    transform: scale(1.); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#sm-banner h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#sm-banner h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#sm-banner .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+}
+/*Transmitter*/
+
+#sm-banner2 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/Transmitter.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+#sm-banner2 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner2 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+#sm-banner2 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner2 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+
+/*frame*/
+
+#sm-banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/Frames.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s ease;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+
+#sm-banner3 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner3 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner3 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+
+#sm-banner3 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+}
+/*propellers*/
+
+#sm-banner4 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/propellers.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+#sm-banner4 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner4 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner4 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#sm-banner4 h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#sm-banner4 h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#sm-banner4 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+/*battery*/
+
+#sm-banner5 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/battery.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+
+#sm-banner5 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner5 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner5 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#sm-banner5 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+/*camera*/
+
+
+#sm-banner6 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/action\ camera.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s ease;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+#sm-banner6 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner6 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#sm-banner6 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+
+
+#sm-banner6 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+/*charger*/
+
+#sm-banner7 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/charger.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.5s ease; /* Smooth animation */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+#sm-banner7 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner7 .banner-box h2 {
+    color: black;
+    font-size: 30px;
+}
+#sm-banner7 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#sm-banner7 h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#sm-banner7 h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#sm-banner7 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+/*5 inch drone*/
+
+#sm-banner8 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/drone.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+#sm-banner8 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner8 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+#sm-banner8 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner8 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+
+
+/*Devlopment Boards*/
+
+#sm-banner9 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/programing\ board.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s ease;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+
+#sm-banner9 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner9 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner9 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+#sm-banner9 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+/*Accessories*/
+
+#sm-banner10 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/e\ modules.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+
+#sm-banner10 .banner-box h2 {
+    color: black;
+    font-size: 30px;
+}
+#sm-banner10 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner10 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#sm-banner10 h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#sm-banner10 h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#sm-banner10 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+/*sensormodules*/
+
+#sm-banner11 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/sensor.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+#sm-banner11 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner11 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+#sm-banner11 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner11 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+
+/*motor*/
+
+#sm-banner12 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/motors.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s ease;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+
+#sm-banner12 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner12 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner12 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+#sm-banner12 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+/*iot*/
+
+#sm-banner13 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/iot.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+#sm-banner13 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner13 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner13 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#sm-banner13 h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#sm-banner13 h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#sm-banner13 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+/*Electronic components */
+
+#sm-banner14 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/e\ components.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+#sm-banner14 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner14 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner14 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#sm-banner14 h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#sm-banner14 h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#sm-banner14 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+/*display*/
+
+#sm-banner15 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/display.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+#sm-banner15 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner15 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner15 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#sm-banner15 h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#sm-banner15 h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#sm-banner15 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+/*mechanical parts*/
+
+#sm-banner16 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/solding\ iron.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+#sm-banner16 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner16 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+#sm-banner16 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner16 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+
+
+
+/*evparts*/
+
+#sm-banner17 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/ev\ parts.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+#sm-banner17 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner17 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+#sm-banner17 .banner-box h2{
+    color: black;
+    font-size: 30px;
+}
+#sm-banner17 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+
+
+
+/*3d printer*/
+
+
+#sm-banner18 .banner-box {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/3d\ printer.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+
+#sm-banner18 .banner-box h2 {
+    color: black;
+    font-size: 30px;
+}
+#sm-banner18 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner18 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#sm-banner18 h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#sm-banner18 h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#sm-banner18 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+/*diy*/
+
+
+#sm-banner19 .banner-box {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("shop/diy\ kit.png");
+    min-width: 1080px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Curves the edges */
+    overflow: hidden; /* Ensures the background image respects the border-radius */
+    transition: transform 0.3s cubic-bezier(0.25, 3, 0.5, 1); /* Smooth scaling */
+    margin: auto;
+    width: fit-content;
+}
+
+
+#sm-banner19 .banner-box h2 {
+    color: black;
+    font-size: 30px;
+}
+#sm-banner19 .banner-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+#sm-banner19 .banner-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#sm-banner19 h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#sm-banner19 h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#sm-banner19 .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+    transform: scale(1.05);
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    
+}
+
+footer .follow{
+    margin-top: 20px;
+
+}
+
+footer .follow i{
+    color: grey;
+    padding-right: 4px;
+    cursor: pointer;
+
+}
+
+footer .install .row img{
+    border: 1px solid aquamarine;
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+
+
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: purple;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
