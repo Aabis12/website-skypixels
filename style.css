@@ -282,7 +282,7 @@ button .bank{
 
 /* Home Page */
 #hero {
-    background-image: url(img/Purple_Black_Modern_Marketing_Plan_Presentation_Website_3.png);
+    background-image: url(homepage/Purple_Black_Modern_Marketing_Plan_Presentation_Website_3.png);
     height: 100vh; /* Full viewport height */
     width: 100%; /* Full width */
     background-size: cover; /* Ensures the image covers the entire container */
@@ -596,7 +596,7 @@ button .bank{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("img/wp10467075-fpv-drone-wallpapers.jpg");
+    background-image: url("homepage/wp10467075-fpv-drone-wallpapers.jpg");
     min-width: 1080px;
     height: 40vh;
     background-size: cover;
@@ -627,7 +627,7 @@ button .bank{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("img/lush-green-farmland-being-surveyed-by-drone-precision-agriculture.jpg");
+    background-image: url("homepage/lush-green-farmland-being-surveyed-by-drone-precision-agriculture.jpg");
     min-width: 1080px;
     height: 40vh;
     background-size: cover;
@@ -655,7 +655,7 @@ button .bank{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("img/1065502.jpg");
+    background-image: url("homepage/1065502.jpg");
     min-width: 1080px;
     height: 40vh;
     background-size: cover;
@@ -716,7 +716,7 @@ button .bank{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("img/Untitled\ \(14.228\ x\ 2\ in\).png");
+    background-image: url("img/homepage/Untitled\ \(14.228\ x\ 2\ in\).png");
     background-repeat: no-repeat;
     background-position: 20% 20%;
     background-color: blanchedalmond;
